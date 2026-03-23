@@ -701,7 +701,7 @@ header { display: none !important; }
       <div class="cft" onclick="setCFmt('mla',this)">MLA 9th</div>
       <div class="cft" onclick="setCFmt('ieee',this)">IEEE</div>
       <div class="cft" onclick="setCFmt('chicago',this)">Chicago</div>
-      <div class="cft" onclick="setCFmt('bibtex',this)">BibTeX</div>
+
     </div>
     <div class="cfd"><label>Paper Title</label><input id="cTitle" placeholder="e.g. A Survey on Hallucination in Large Language Models"></div>
     <div class="cfd"><label>Authors</label><input id="cAuth" placeholder="e.g. Huang, L., Yu, W., Ma, W."></div>
@@ -1488,7 +1488,7 @@ function genCite() {
   if (_fmt === 'mla')     out = a + '. "' + t + '." ' + j + ', ' + y + '. ' + d;
   if (_fmt === 'ieee')    out = a + ', "' + t + '," ' + j + ', ' + y + '. [Online]. Available: ' + d;
   if (_fmt === 'chicago') out = a + '. "' + t + '." ' + j + ' (' + y + '). ' + d;
-  if (_fmt === 'bibtex')  out = '@article{key' + y + ',\n  title={' + t + '},\n  author={' + a + '},\n  journal={' + j + '},\n  year={' + y + '},\n  url={' + d + '}\n}';
+
   document.getElementById('citeOut').textContent = out;
 }
 function copyCite() {
