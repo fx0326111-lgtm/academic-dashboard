@@ -1049,7 +1049,7 @@ header { display: none !important; }
         return '<div style="background:#fff;border-radius:8px;padding:8px 10px;border:1px solid #D0E8D8">'
           +'<div style="font-size:10px;font-weight:700;color:'+f.tc+';margin-bottom:4px">'+f.f+'</div>'
           +'<div style="background:#eee;border-radius:4px;height:6px"><div style="background:'+f.tc+';width:'+pct+'%;height:6px;border-radius:4px"></div></div>'
-          +'<div style="font-size:10px;color:#888;margin-top:3px">'+c+'/5</div></div>';}).join('')+'</div>';
+          +'</div>';}).join('')+'</div>';
     var lEl=document.getElementById("overview-paper-list");
     var _sbp=document.getElementById("sb-papers");if(_sbp)_sbp.textContent=P.length;
     if(lEl) lEl.innerHTML=P.length?'<div class="papers-grid">'+P.map(function(p){
